@@ -1,22 +1,18 @@
 #include "main.h"
+
 /**
- * print_most_numbers - prints the required numbers
- * Return: 0
+ * print_most_numbers - a function print a number.
+ *
  */
+
 void print_most_numbers(void)
 {
-	int c = 0;
+	int i;
 
-	for (; c <= 9; c++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		if (c == 2 || c == 4)
-		{
-			continue;
-		}
-		else
-		{
-			_putchar(c);
-		}
+		if (i != '2' && i != '4')
+		_putchar(i);
 	}
 	_putchar('\n');
 }
